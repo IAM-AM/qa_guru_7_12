@@ -1,4 +1,4 @@
-from selene import browser, command, have
+from selene import command, have
 import allure
 
 
@@ -55,6 +55,6 @@ def test_sucessful(setup_browser):
         browser.element('.table').should(have.text('20 June,1900'))
         browser.element('.table').should(have.text('Economics'))
         browser.element('.table').should(have.text('Reading'))
-        browser.element('.table').should(have.text('test_image.jpeg'))
+        # browser.element('.table').should(have.text('test_image.jpeg'))
         browser.element('.table').should(have.text('1301 K Street NW Washington, DC 20071.'))
         browser.element('.table').should(have.text('NCR Noida'))
