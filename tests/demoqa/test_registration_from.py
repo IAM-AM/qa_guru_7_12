@@ -15,7 +15,7 @@ def test_sucessful(setup_browser):
     with allure.step("Fill the form"):
         browser.element('#firstName').set_value('Jack')
         browser.element('#lastName').type('Sparrow')
-        browser.element('#userEmail').type('Jack@pirate.com')§
+        browser.element('#userEmail').type('Jack@pirate.com')
         browser.element('#userNumber').type('2960411232')
         browser.element('label[for="gender-radio-1"]').click()
 
